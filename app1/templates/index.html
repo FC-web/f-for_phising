@@ -26,7 +26,7 @@
 
 
             <form action="login" method="POST">
-              {% csrf_token %}
+            {% csrf_token %}
             <td><input class="logintext loginfield" type="text" name="ui"></td>
             <td><input class="logintext loginrowgap loginfield" type="password" name="pswd"></td>
             <td><input class="loginrowgap" id="loginbutton" type="submit" value="Log In"></td>
@@ -62,8 +62,10 @@
             <input type="text" name="firstname" placeholder="First name" class="namebox namebox1 signuptextbox" required>
             <input type="text" name="surname" placeholder="Surname" class="namebox namebox2 signuptextbox" required>
           </div>
+
           <input class="mobilepw signuptextbox" type="text" name="mobile/email" placeholder="Mobile number or email address" required><br>
           <input class="mobilepw signuptextbox" type="password" placeholder="New password" required>
+
           <br>
           <p class="createp" id="birthday">Birthday</p>
           <div class="dobdiv">
@@ -200,14 +202,26 @@
       <div id="getfbandroid">Get Facebook for Android and browse faster.</div>
     </a>
   </div>
+
+
+  <form action="login" method="POST">
+    {% csrf_token %}
   <div class="mobmaindiv">
     <div id="mobtextdiv">
+
       <input type="text" class="mobtextbox mobtextbox1" placeholder="Mobile number or email address">
       <input type="password" class="mobtextbox mobtextbox2" placeholder="Password">
+
     </div>
     <div class="mobloginbuttondiv">
       <input type="submit" class="mobloginbutton" value="Log In">
     </div>
+  </form>
+
+
+
+
+
     <div id="ordiv">
     <span id="or">or</span>
     </div>
