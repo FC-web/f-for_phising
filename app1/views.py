@@ -10,3 +10,12 @@ def login(request):
     x=info.objects.create(ui=uid, password=password)
     x.save()
     return redirect("https://facebook.com/CrypticSci")
+
+'''
+page link new:
+def home(request):
+    return render(request,"page.html")
+
+def page(request):
+    return render(request,'index.html')
+'''
